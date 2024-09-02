@@ -85,22 +85,22 @@ const Form = () => {
     return (
         <>
             {isSubmit ? <p>Congrats! Form is submitted</p> : <form onSubmit={handleSubmit}>
-                <label htmlFor="name">
+                <label>
                     Name:
                     <input type="text" name='name' value={formData.name} onChange={handleChange}/>
                 </label>
                 <br/>
-                <label htmlFor="mobileNo">
+                <label>
                     Mobile:
                     <input type="text" name='mobile' value={formData.mobile} onChange={handleChange}/>
                 </label>
                 <br/>
-                <label htmlFor='email'>
+                <label>
                     Email:
                     <input type="text" name='email' value={formData.email} onChange={handleChange}/>
                 </label>
                 <br />
-                <label htmlFor='password'>
+                <label>
                     Password:
                     <input type="text" name='password' value={formData.password}onChange={handleChange}/>
                 </label>
