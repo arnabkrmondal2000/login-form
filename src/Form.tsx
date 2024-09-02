@@ -57,9 +57,8 @@ const Form = () => {
     }
     const validInput = (data: FormState) => {
         console.log("input data =====>", data);
-        if(data.name === '') { 
-            console.log("input data =====>", data.name.length);
-            
+
+        if(data.name === '') {  
             alert('user name naver empty');
             return false;
         }
@@ -75,7 +74,7 @@ const Form = () => {
         }  
         ;
         if(data.password.length <= 6) {
-            console.log("lengt====>",data.password.length);           
+           //console.log("lengt====>",data.password.length);           
            alert('Password always grater than 6 letter');
            return false;
         }
